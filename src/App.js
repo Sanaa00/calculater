@@ -89,7 +89,7 @@ function ruducer(state, { type, payload }) {
         customElements: evaluate(state),
       };
     default:
-      return "";
+      return state;
   }
 }
 function evaluate({ currentOperand, prevOperand, operation }) {
